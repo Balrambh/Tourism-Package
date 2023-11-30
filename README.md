@@ -8,4 +8,4 @@ Tourism Package reponsive website build using HTML5, CSS3 and Javascript. The co
 
 ### Live Demo
 
-https://Tourism Package.netlify.app/
+https://Tourism Package.in/
