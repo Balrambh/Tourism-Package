@@ -1,518 +1,396 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Responsive website for tourism packages built using HTML5, CSS3, and JavaScript. The complete layout of the page is constructed using grid layout and flexbox with some engaging animations."
-    />
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png" />
-    <link rel="stylesheet" href="font/stylesheet.css" media="screen" />
-    <link rel="stylesheet" href="css/style.css" media="screen" />
-    <title>Tourism Package - Explore the india</title>
-  </head>
-  <body>
-    <!-- HEADER -->
-    <header class="header">
-      <div class="container">
-        <div class="navigation">
-          <div class="logo">Tourism Package</div>
-          <img
-            src="img/nav-icon.svg"
-            class="nav-icon"
-            alt="navigation icon"
-            width="30"
-            height="30"
-          />
-          <ul>
-            <li>
-              <a href="#home"> Home </a>
-            </li>
-            <li>
-              <a href="#about"> About </a>
-            </li>
-            <li>
-              <a href="#tours"> Tours </a>
-            </li>
-            <li>
-              <a href="#offers"> Offers </a>
-            </li>
-            <li>
-              <button class="btn">Book Now</button>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </header>
 
-    <main>
-      <!-- SECTION HERO -->
-      <section class="section-hero">
-        <div class="container">
-          <div class="hero-content">
-            <h1 class="heading heading--1 margin-bottom">
-              Life is short and the world is wide; the sooner you start exploring it, the better.
-            </h1>
-            <button class="btn">Explore now</button>
-          </div>
-        </div>
-      </section>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Responsive website for tourism packages built using HTML5, CSS3, and JavaScript. The complete layout of the page is constructed using grid layout and flexbox with some engaging animations." />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png" />
+  <link rel="stylesheet" href="font/stylesheet.css" media="screen" />
+  <link rel="stylesheet" href="css/style.css" media="screen" />
+  <title>Tourism Package - Explore the india</title>
+</head>
 
-      <!-- SECTION SEARCH -->
-      <section class="section-search">
-        <div class="container search-box">
-          <div class="wrapper">
-            <h3>Destination</h3>
-            <div class="custom-select">
-              <select>
-                <option value="Ayodhya">Ayodhya</option>
-                <option value="Surat">Surat</option>
-                <option value="Dehradun">Dehradun</option>
-                <option value="Rishikesh">Rishikesh</option>
-                <option value="Haridwar">Haridwar</option>
-                <option value="Vaisnodevi">Vaisno Devi</option>
-                <option value="Banarash">Banarash</option>
-              </select>
-              <span class="arrow"></span>
-            </div>
-          </div>
-
-          <div class="wrapper">
-            <h3>Date</h3>
-            <div class="custom-date">
-              <input type="date" id="date" />
-              <img src="./img/calendar.svg" alt="" class="calender-icon" />
-            </div>
-          </div>
-
-          <div class="wrapper">
-            <h3>Average Price</h3>
-            <div class="custom-select">
-              <select>
-                <option value="Rs.200">Rs.200 - Rs.500</option>
-                <option value="Rs.500">Rs.500 - Rs.1000</option>
-                <option value="Rs.1000">Rs.1000 - Rs.2000</option>
-              </select>
-              <span class="arrow"></span>
-            </div>
-          </div>
-          <button class="btn">Search</button>
-        </div>
-      </section>
-
-      <!-- SECTION ABOUT -->
-      <section class="section-about" id="about">
-        <div class="container about-box" data-aos="fade-up">
-          <div class="about-box__heading">
-            <h3 class="color-blue margin-bottom">About us</h3>
-            <div class="heading heading--1 capitalize">
-              Explore all corners of the india with us
-            </div>
-          </div>
-          <div class="about-box__content">
-            <p class="margin-bottom">
-              Embark on a journey with us to explore the diverse corners of the india. Our mission is to provide unparalleled travel experiences. Discover more about our story and commitment to your adventures.
-            </p>
-            <button class="btn btn--secondary">Read More</button>
-          </div>
-        </div>
-      </section>
-
-      <!-- SECTION TOURS -->
-      <section class="section-tours" id="tours">
-        <div class="container tour-box" data-aos="fade-up">
-          <header class="tour-box__heading">
-            <h2 class="heading heading--2 color-blue margin-bottom">
-              Our top tours
-            </h2>
-            <p>
-              Discover our curated selection of top tours, crafted to offer unforgettable experiences. Explore the india with us and create memories that last a lifetime.
-            </p>
-          </header>
-
-          <article class="tour-box__cards">
-            <div class="t-card" data-aos="flip-left" data-aos-duration="1000">
-              <img
-                src="img/goa.jpg"
-                alt="goa"
-                width="500"
-                height="500"
-                class="t-card__img"
-              />
-
-              <div class="t-card__content">
-                <div class="t-card__title">
-                  <h3 class="name">GOA</h3>
-                  <p class="price">Rs.500</p>
-                </div>
-
-                <div class="t-card__description">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                </div>
-
-                <div class="t-card__items">
-                  <div class="days">5 Days</div>
-                  <div class="likes">
-                    <img
-                      src="img/heart.svg"
-                      alt="heart"
-                      width="20"
-                      height="20"
-                    />
-                    4.9k
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="t-card" data-aos="flip-left" data-aos-duration="1000">
-              <img
-                src="img/jaipur.jpg"
-                alt="jaipur"
-                width="500"
-                height="500"
-                class="t-card__img"
-              />
-
-              <div class="t-card__content">
-                <div class="t-card__title">
-                  <h3 class="name">JAIPUR</h3>
-                  <p class="price">Rs.500</p>
-                </div>
-
-                <div class="t-card__description">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                </div>
-
-                <div class="t-card__items">
-                  <div class="days">6 Days</div>
-                  <div class="likes">
-                    <img
-                      src="img/heart.svg"
-                      alt="heart"
-                      width="20"
-                      height="20"
-                    />
-                    4.9k
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="t-card" data-aos="flip-left" data-aos-duration="1000">
-              <img
-                src="img/agra.jpg"
-                alt="AGRA"
-                width="500"
-                height="500"
-                class="t-card__img"
-              />
-
-              <div class="t-card__content">
-                <div class="t-card__title">
-                  <h3 class="name">AGRA</h3>
-                  <p class="price">Rs.500</p>
-                </div>
-
-                <div class="t-card__description">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                </div>
-
-                <div class="t-card__items">
-                  <div class="days">3 Days</div>
-                  <div class="likes">
-                    <img
-                      src="img/heart.svg"
-                      alt="heart"
-                      width="20"
-                      height="20"
-                    />
-                    4.8k
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="t-card" data-aos="flip-left" data-aos-duration="1000">
-              <img
-                src="img/ayodhya.jpg"
-                alt="ayodhya"
-                width="500"
-                height="500"
-                class="t-card__img"
-              />
-
-              <div class="t-card__content">
-                <div class="t-card__title">
-                  <h3 class="name">AYODHYA</h3>
-                  <p class="price">Rs.500</p>
-                </div>
-
-                <div class="t-card__description">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                </div>
-
-                <div class="t-card__items">
-                  <div class="days">7 Days</div>
-                  <div class="likes">
-                    <img
-                      src="img/heart.svg"
-                      alt="heart"
-                      width="20"
-                      height="20"
-                    />
-                    4.8k
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="t-card" data-aos="flip-left" data-aos-duration="1000">
-              <img
-                src="img/rishikesh.jpg"
-                alt="rishikesh"
-                width="500"
-                height="500"
-                class="t-card__img"
-              />
-
-              <div class="t-card__content">
-                <div class="t-card__title">
-                  <h3 class="name">RISHIKESH</h3>
-                  <p class="price">Rs.400</p>
-                </div>
-
-                <div class="t-card__description">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                </div>
-
-                <div class="t-card__items">
-                  <div class="days">5 Days</div>
-                  <div class="likes">
-                    <img
-                      src="img/heart.svg"
-                      alt="heart"
-                      width="20"
-                      height="20"
-                    />
-                    4.7k
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="t-card" data-aos="flip-left" data-aos-duration="1000">
-              <img
-                src="img/nainital.jpg"
-                alt="nainital"
-                width="500"
-                height="500"
-                class="t-card__img"
-              />
-
-              <div class="t-card__content">
-                <div class="t-card__title">
-                  <h3 class="name">NAINITAL</h3>
-                  <p class="price">Rs.300</p>
-                </div>
-
-                <div class="t-card__description">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                </div>
-
-                <div class="t-card__items">
-                  <div class="days">2 Days</div>
-                  <div class="likes">
-                    <img
-                      src="img/heart.svg"
-                      alt="heart"
-                      width="20"
-                      height="20"
-                    />
-                    4.8k
-                  </div>
-                </div>
-              </div>
-            </div>
-          </article>
-        </div>
-      </section>
-
-      <!-- SECTION OFFER -->
-      <section class="section-offer" id="offers">
-        <div class="container offer-box">
-          <div class="offer-box__percentage" data-aos="zoom-in">50%</div>
-          <div class="offer-box__content" data-aos="fade-up">
-            <h2 class="heading heading--2">
-              Special Offer this month on our premium tours Rs.250 Regular Rs.500
-            </h2>
-            <p>
-              Avail our special offer this month and enjoy premium tours at a discounted rate. Don't miss the chance to embark on an extraordinary journey with us.
-            </p>
+<body>
+  <!-- HEADER -->
+  <header class="header">
+    <div class="container">
+      <div class="navigation">
+        <div class="logo">Tourism Package</div>
+        <img src="img/nav-icon.svg" class="nav-icon" alt="navigation icon" width="30" height="30" />
+        <ul>
+          <li>
+            <a href="#home"> Home </a>
+          </li>
+          <li>
+            <a href="#about"> About </a>
+          </li>
+          <li>
+            <a href="#tours"> Tours </a>
+          </li>
+          <li>
+            <a href="#offers"> Offers </a>
+          </li>
+          <li>
             <button class="btn">Book Now</button>
-          </div>
-        </div>
-      </section>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
 
-      <!-- SECTION REVIEW -->
-      <section class="section-review">
-        <div class="container review-box" data-aos="fade-up">
-          <header class="review-header">
-            <h3 class="color-blue">Our Reviews</h3>
-            <h2 class="heading heading--2">What the people say about us</h2>
-          </header>
-
-          <article class="review-cards">
-            <div class="r-card">
-              <img
-                src="img/user-1.jpg"
-                alt=""
-                class="r-card__img"
-                width="90"
-                height="90"
-              />
-              <div class="r-card__name">ANDROW</div>
-              <span class="quot">&#8223;</span>
-              <div class="r-card__description">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor,
-                vitae.
-              </div>
-              <div class="r-card__rating">
-                <img
-                  src="img/star-grp.svg"
-                  alt="star"
-                  width="100"
-                  height="30"
-                />
-              </div>
-            </div>
-
-            <div class="r-card">
-              <img
-                src="img/user-2.jpg"
-                alt=""
-                class="r-card__img"
-                width="90"
-                height="90"
-              />
-              <div class="r-card__name">LINA</div>
-              <span class="quot">&#8223;</span>
-              <div class="r-card__description">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor,
-                vitae.
-              </div>
-              <div class="r-card__rating">
-                <img
-                  src="img/star-grp.svg"
-                  alt="star"
-                  width="100"
-                  height="30"
-                />
-              </div>
-            </div>
-          </article>
-        </div>
-      </section>
-    </main>
-
-    <!-- SECTION FOOTER -->
-    <footer class="section-footer">
-      <div class="footer-box container">
-        <div class="contact-details">
-          <h2 class="heading heading--2 margin-bottom">Tourism</h2>
-          <ul class="contact-data">
-            <li class="location">100 Nallin Street, New Youk</li>
-            <li class="phone">+00 000 000 00</li>
-            <li class="email">Tourism@domine.com</li>
-            <li class="social">
-              <img
-                src="./img/logo-whatsapp.svg"
-                alt="whatsapp icon"
-                width="35"
-                height="35"
-              />
-
-              <img
-                src="./img/logo-facebook.svg"
-                alt="facebook icon"
-                width="35"
-                height="35"
-              />
-
-              <img
-                src="./img/logo-instagram.svg"
-                alt="instagram icon"
-                width="35"
-                height="35"
-              />
-
-              <img
-                src="./img/logo-twitter.svg"
-                alt="twitter icon"
-                width="35"
-                height="35"
-              />
-            </li>
-          </ul>
-        </div>
-
-        <nav class="footer-nav" aria-label="navigation">
-          <div class="nav-name">Quick Links</div>
-          <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#tours">Tours</a></li>
-            <li><a href="#offers">Offeres</a></li>
-            <li><a href="#">Contact</a></li>
-          </ul>
-        </nav>
-
-        <nav class="footer-nav" aria-label="navigation">
-          <div class="nav-name">Popular Destinations</div>
-          <ul>
-            <li><a href="#tours">Agra</a></li>
-            <li><a href="#tours">Goa</a></li>
-            <li><a href="#tours">Ayodhya</a></li>
-            <li><a href="#tours">Rishikesh</a></li>
-            <li><a href="#tours">Nainital</a></li>
-          </ul>
-        </nav>
-
-        <div class="newsletter">
-          <div class="newsletter__title">News Letter</div>
-          <div class="newsletter__text">
-            Stay updated with our latest news and offers. Subscribe to our newsletter for exciting travel insights and more.
-          </div>
-          <form class="newsletter__input">
-            <input type="text" placeholder="example@domain.com" />
-            <img
-              src="./img/send.svg"
-              alt="send icon"
-              class="send-icon"
-              width="36"
-              height="36"
-            />
-          </form>
-        </div>
-
-        <div class="legel">
-          <p class="text">Copyright &copy; by Manoranjan&nbsp;</p>
-          <a href="https://github.com/Manoranjan-D/responsive-website-tourism">
-            <img
-              src="img/github.svg"
-              alt="github"
-              class="github"
-              width="35"
-              height="35"
-            />
-          </a>
+  <main>
+    <!-- SECTION HERO -->
+    <section class="section-hero">
+      <div class="container">
+        <div class="hero-content">
+          <h1 class="heading heading--1 margin-bottom">
+            Life is short and the world is wide; the sooner you start exploring it, the better.
+          </h1>
+          <button class="btn">Explore now</button>
         </div>
       </div>
-    </footer>
+    </section>
 
-    <!-- SCRIPT -->
-    <script src="index.js"></script>
-  </body>
+    <!-- SECTION SEARCH -->
+    <section class="section-search">
+      <div class="container search-box">
+        <div class="wrapper">
+          <h3>Destination</h3>
+          <div class="custom-select">
+            <select>
+              <option value="Ayodhya">Ayodhya</option>
+              <option value="Surat">Surat</option>
+              <option value="Dehradun">Dehradun</option>
+              <option value="Rishikesh">Rishikesh</option>
+              <option value="Haridwar">Haridwar</option>
+              <option value="Vaisnodevi">Vaisno Devi</option>
+              <option value="Banarash">Banarash</option>
+              <option value="Gorakhpur">Gorakhpur</option>
+              <option value="kanpur">kanpur</option>
+            </select>
+            <span class="arrow"></span>
+          </div>
+        </div>
+
+        <div class="wrapper">
+          <h3>Date</h3>
+          <div class="custom-date">
+            <input type="date" id="date" />
+            <img src="./img/calendar.svg" alt="" class="calender-icon" />
+          </div>
+        </div>
+
+        <div class="wrapper">
+          <h3>Average Price</h3>
+          <div class="custom-select">
+            <select>
+              <option value="Rs.200">Rs.200 - Rs.500</option>
+              <option value="Rs.500">Rs.500 - Rs.1000</option>
+              <option value="Rs.1000">Rs.1000 - Rs.2000</option>
+            </select>
+            <span class="arrow"></span>
+          </div>
+        </div>
+        <button class="btn">Search</button>
+      </div>
+    </section>
+
+    <!-- SECTION ABOUT -->
+    <section class="section-about" id="about">
+      <div class="container about-box" data-aos="fade-up">
+        <div class="about-box__heading">
+          <h3 class="color-blue margin-bottom">About us</h3>
+          <div class="heading heading--1 capitalize">
+            Explore all corners of the india with us
+          </div>
+        </div>
+        <div class="about-box__content">
+          <p class="margin-bottom">
+            Embark on a journey with us to explore the diverse corners of the india. Our mission is to provide
+            unparalleled travel experiences. Discover more about our story and commitment to your adventures.
+          </p>
+          <button class="btn btn--secondary">Read More</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION TOURS -->
+    <section class="section-tours" id="tours">
+      <div class="container tour-box" data-aos="fade-up">
+        <header class="tour-box__heading">
+          <h2 class="heading heading--2 color-blue margin-bottom">
+            Our top tours
+          </h2>
+          <p>
+            Discover our curated selection of top tours, crafted to offer unforgettable experiences. Explore the india
+            with us and create memories that last a lifetime.
+          </p>
+        </header>
+
+        <article class="tour-box__cards">
+          <!-- Goa Tour -->
+          <div class="t-card" data-aos="flip-left" data-aos-duration="1000">
+            <img src="img/goa.jpg" alt="goa" width="500" height="500" class="t-card__img" />
+            <div class="t-card__content">
+              <div class="t-card__title">
+                <h3 class="name">GOA</h3>
+                <p class="price">Rs.500</p>
+              </div>
+              <div class="t-card__description">
+                Explore the pristine beaches, vibrant nightlife, and Portuguese heritage of Goa. Indulge in water
+                sports, savor local cuisine, and unwind in the laid-back atmosphere.
+              </div>
+              <div class="t-card__items">
+                <div class="days">5 Days</div>
+                <div class="likes">
+                  <img src="img/heart.svg" alt="heart" width="20" height="20" />
+                  4.9k
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Jaipur Tour -->
+          <div class="t-card" data-aos="flip-left" data-aos-duration="1000">
+            <img src="img/jaipur.jpg" alt="jaipur" width="500" height="500" class="t-card__img" />
+            <div class="t-card__content">
+              <div class="t-card__title">
+                <h3 class="name">JAIPUR</h3>
+                <p class="price">Rs.500</p>
+              </div>
+              <div class="t-card__description">
+                Immerse yourself in the royal heritage of Jaipur, known as the Pink City. Visit majestic forts, palaces,
+                and vibrant markets. Experience the rich culture and architecture.
+              </div>
+              <div class="t-card__items">
+                <div class="days">6 Days</div>
+                <div class="likes">
+                  <img src="img/heart.svg" alt="heart" width="20" height="20" />
+                  4.9k
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Agra Tour -->
+          <div class="t-card" data-aos="flip-left" data-aos-duration="1000">
+            <img src="img/agra.jpg" alt="AGRA" width="500" height="500" class="t-card__img" />
+            <div class="t-card__content">
+              <div class="t-card__title">
+                <h3 class="name">AGRA</h3>
+                <p class="price">Rs.500</p>
+              </div>
+              <div class="t-card__description">
+                Discover the timeless beauty of the Taj Mahal and other historical wonders in Agra. Immerse yourself in
+                the Mughal architecture and rich history.
+              </div>
+              <div class="t-card__items">
+                <div class="days">3 Days</div>
+                <div class="likes">
+                  <img src="img/heart.svg" alt="heart" width="20" height="20" />
+                  4.8k
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Ayodhya Tour -->
+          <div class="t-card" data-aos="flip-left" data-aos-duration="1000">
+            <img src="img/ayodhya.jpg" alt="ayodhya" width="500" height="500" class="t-card__img" />
+            <div class="t-card__content">
+              <div class="t-card__title">
+                <h3 class="name">AYODHYA</h3>
+                <p class="price">Rs.500</p>
+              </div>
+              <div class="t-card__description">
+                Explore the religious and historical significance of Ayodhya. Visit ancient temples and immerse yourself
+                in the spiritual atmosphere.
+              </div>
+              <div class="t-card__items">
+                <div class="days">7 Days</div>
+                <div class="likes">
+                  <img src="img/heart.svg" alt="heart" width="20" height="20" />
+                  4.8k
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Rishikesh Tour -->
+          <div class="t-card" data-aos="flip-left" data-aos-duration="1000">
+            <img src="img/rishikesh.jpg" alt="rishikesh" width="500" height="500" class="t-card__img" />
+            <div class="t-card__content">
+              <div class="t-card__title">
+                <h3 class="name">RISHIKESH</h3>
+                <p class="price">Rs.400</p>
+              </div>
+              <div class="t-card__description">
+                Experience the tranquility and adventure in the yoga capital of the world. Explore the Ganges, attend
+                yoga retreats, and enjoy the spiritual ambiance.
+              </div>
+              <div class="t-card__items">
+                <div class="days">5 Days</div>
+                <div class="likes">
+                  <img src="img/heart.svg" alt="heart" width="20" height="20" />
+                  4.7k
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Nainital Tour -->
+          <div class="t-card" data-aos="flip-left" data-aos-duration="1000">
+            <img src="img/nainital.jpg" alt="nainital" width="500" height="500" class="t-card__img" />
+            <div class="t-card__content">
+              <div class="t-card__title">
+                <h3 class="name">NAINITAL</h3>
+                <p class="price">Rs.300</p>
+              </div>
+              <div class="t-card__description">
+                Escape to the picturesque hills of Nainital. Enjoy boating in the serene lakes, explore charming
+                markets, and embrace the cool climate.
+              </div>
+              <div class="t-card__items">
+                <div class="days">2 Days</div>
+                <div class="likes">
+                  <img src="img/heart.svg" alt="heart" width="20" height="20" />
+                  4.8k
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </article>
+      </div>
+    </section>
+
+    <!-- SECTION OFFER -->
+    <section class="section-offer" id="offers">
+      <div class="container offer-box">
+        <div class="offer-box__percentage" data-aos="zoom-in">50%</div>
+        <div class="offer-box__content" data-aos="fade-up">
+          <h2 class="heading heading--2">
+            Special Offer this month on our premium tours Rs.250 Regular Rs.500
+          </h2>
+          <p>
+            Avail our special offer this month and enjoy premium tours at a discounted rate. Don't miss the chance to
+            embark on an extraordinary journey with us.
+          </p>
+          <button class="btn">Book Now</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION REVIEW -->
+    <section class="section-review">
+      <div class="container review-box" data-aos="fade-up">
+        <header class="review-header">
+          <h3 class="color-blue">Our Reviews</h3>
+          <h2 class="heading heading--2">What the people say about us</h2>
+        </header>
+
+        <article class="review-cards">
+          <div class="r-card">
+            <img src="img/user-1.jpg" alt="" class="r-card__img" width="90" height="90" />
+            <div class="r-card__name">Nikhil Agnihotri</div>
+            <span class="quot">&#8223;</span>
+            <div class="r-card__description">
+              Tourism is travel for pleasure, and the commercial activity of providing and supporting such travel.
+
+            </div>
+            <div class="r-card__rating">
+              <img src="img/star-grp.svg" alt="star" width="100" height="30" />
+            </div>
+          </div>
+
+          <div class="r-card">
+            <img src="img/user-2.jpg" alt="" class="r-card__img" width="90" height="90" />
+            <div class="r-card__name">Anita singh</div>
+            <span class="quot">&#8223;</span>
+            <div class="r-card__description">
+              Tourism is important for countries, economies, societies and social structure of a country, culture and
+              local people, and for environment too.
+
+
+            </div>
+            <div class="r-card__rating">
+              <img src="img/star-grp.svg" alt="star" width="100" height="30" />
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <!-- SECTION FOOTER -->
+  <footer class="section-footer">
+    <div class="footer-box container">
+      <div class="contact-details">
+        <h2 class="heading heading--2 margin-bottom">Tourism</h2>
+        <ul class="contact-data">
+          <li class="location">Raebareli bypass, sahadatganj ayodhya</li>
+          <li class="phone">+918545906155</li>
+          <li class="email">tourismpackage@gmail.com</li>
+          <li class="social">
+            <img src="./img/logo-whatsapp.svg" alt="whatsapp icon" width="35" height="35" />
+
+            <img src="./img/logo-facebook.svg" alt="facebook icon" width="35" height="35" />
+
+            <img src="./img/logo-instagram.svg" alt="instagram icon" width="35" height="35" />
+
+            <img src="./img/logo-twitter.svg" alt="twitter icon" width="35" height="35" />
+          </li>
+        </ul>
+      </div>
+
+      <nav class="footer-nav" aria-label="navigation">
+        <div class="nav-name">Quick Links</div>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#tours">Tours</a></li>
+          <li><a href="#offers">Offeres</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+
+      <nav class="footer-nav" aria-label="navigation">
+        <div class="nav-name">Popular Destinations</div>
+        <ul>
+          <li><a href="#tours">Agra</a></li>
+          <li><a href="#tours">Goa</a></li>
+          <li><a href="#tours">Ayodhya</a></li>
+          <li><a href="#tours">Rishikesh</a></li>
+          <li><a href="#tours">Nainital</a></li>
+        </ul>
+      </nav>
+
+      <div class="newsletter">
+        <div class="newsletter__title">News Letter</div>
+        <div class="newsletter__text">
+          Stay updated with our latest news and offers. Subscribe to our newsletter for exciting travel insights and
+          more.
+        </div>
+        <form class="newsletter__input">
+          <input type="text" placeholder="example@domain.com" />
+          <img src="./img/send.svg" alt="send icon" class="send-icon" width="36" height="36" />
+        </form>
+      </div>
+
+      <div class="legel">
+        <p class="text">Copyright &copy; by Manoranjan&nbsp;</p>
+        <a href="https://github.com/Manoranjan-D/responsive-website-tourism">
+          <img src="img/github.svg" alt="github" class="github" width="35" height="35" />
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- SCRIPT -->
+  <script src="index.js"></script>
+</body>
+
 </html>
